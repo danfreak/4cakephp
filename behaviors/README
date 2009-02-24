@@ -1,0 +1,16 @@
+/**
+ * WhoDidIt Model Behavior
+ *
+ * Handles created_by, modified_by fields for a given Model, if they exist in the Model DB table.
+ * It's similar to the created, modified automagic, but it stores the logged User id
+ * in the models that actAs = array('WhoDidIt')
+ * 
+ * This is useful to track who created records, and the last user that has changed them
+ *
+ * @package behaviors
+ * @author Daniel Vecchiato
+ * @version 1.0
+ * @date 24/02/2009
+ * @copyright http://www.4webby.com
+ * @licence MIT
+ **/
