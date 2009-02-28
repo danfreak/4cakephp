@@ -10,8 +10,8 @@
  *
  * @package behaviors
  * @author Daniel Vecchiato
- * @version 1.0
- * @date 24/02/2009
+ * @version 1.1
+ * @date 28/02/2009
  * @copyright http://www.4webby.com
  * @licence MIT
  **/
