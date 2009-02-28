@@ -76,7 +76,7 @@ class WhoDidItBehavior extends ModelBehavior {
 		if ($this->settings[$model->alias]['has_created_by'] || $this->settings[$model->alias]['has_modified_by']) {
 			$AuthSession = $this->settings[$model->alias]['auth_session'];
 			$UserSession = $this->settings[$model->alias]['user_model'];
-			$userId = Set::extract($_SESSION, $AuthSession.'.'.$UserSession.'id');
+			$userId = Set::extract($_SESSION, $AuthSession.'.'.$UserSession.'.'.'id');
 			if ($userId) {
 				$data = array($this->settings[$model->alias]['modified_by_field'] => $userId);
 				if (!$model->exists()) {
